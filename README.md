@@ -1,8 +1,7 @@
 ## Structure
 
-- `keygen_tool/` – GUI for generating RSA keys and saving them securely
-- `main_app/` – application for signing and verifying PDF documents
-- `test_files/` – sample PDFs and generated keys
+- `key_generator.py` – generating RSA keys and saving them securely
+- `gui` – graphical interface, where user inputs the pin
 - `docs/` – diagrams and report materials
 
 ## Authors
