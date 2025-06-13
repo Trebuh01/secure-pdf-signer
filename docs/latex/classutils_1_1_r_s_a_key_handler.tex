@@ -1,0 +1,86 @@
+\doxysection{utils.\+RSAKey\+Handler Class Reference}
+\hypertarget{classutils_1_1_r_s_a_key_handler}{}\label{classutils_1_1_r_s_a_key_handler}\index{utils.RSAKeyHandler@{utils.RSAKeyHandler}}
+
+
+Klasa generująca i eksportująca pary kluczy RSA.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1_r_s_a_key_handler_a949076af9efd389787944df93635a839}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje parę kluczy RSA 4096-\/bitowych. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classutils_1_1_r_s_a_key_handler_a876ac6d268bdabcfa89aeaeb2b5adfa1}{export\+\_\+public\+\_\+key}} (self)
+\begin{DoxyCompactList}\small\item\em Eksportuje klucz publiczny w formacie PEM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classutils_1_1_r_s_a_key_handler_a17e83196c69257abd36bbb7db28f8aae}{export\+\_\+private\+\_\+key}} (self)
+\begin{DoxyCompactList}\small\item\em Eksportuje klucz prywatny w formacie PEM (bez szyfrowania). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1_r_s_a_key_handler_a92d7cadc1c4e142dcf3fff0a5dbbedc6}{key\+\_\+pair}} = rsa.\+generate\+\_\+private\+\_\+key(public\+\_\+exponent=65537, key\+\_\+size=4096)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa generująca i eksportująca pary kluczy RSA. 
+
+\label{doc-constructors}
+\Hypertarget{classutils_1_1_r_s_a_key_handler_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1_r_s_a_key_handler_a949076af9efd389787944df93635a839}\index{utils.RSAKeyHandler@{utils.RSAKeyHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!utils.RSAKeyHandler@{utils.RSAKeyHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classutils_1_1_r_s_a_key_handler_a949076af9efd389787944df93635a839} 
+utils.\+RSAKey\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Inicjalizuje parę kluczy RSA 4096-\/bitowych. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classutils_1_1_r_s_a_key_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1_r_s_a_key_handler_a17e83196c69257abd36bbb7db28f8aae}\index{utils.RSAKeyHandler@{utils.RSAKeyHandler}!export\_private\_key@{export\_private\_key}}
+\index{export\_private\_key@{export\_private\_key}!utils.RSAKeyHandler@{utils.RSAKeyHandler}}
+\doxysubsubsection{\texorpdfstring{export\_private\_key()}{export\_private\_key()}}
+{\footnotesize\ttfamily \label{classutils_1_1_r_s_a_key_handler_a17e83196c69257abd36bbb7db28f8aae} 
+utils.\+RSAKey\+Handler.\+export\+\_\+private\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Eksportuje klucz prywatny w formacie PEM (bez szyfrowania). 
+
+\begin{DoxyReturn}{Returns}
+Klucz prywatny jako bajty. 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_r_s_a_key_handler_a876ac6d268bdabcfa89aeaeb2b5adfa1}\index{utils.RSAKeyHandler@{utils.RSAKeyHandler}!export\_public\_key@{export\_public\_key}}
+\index{export\_public\_key@{export\_public\_key}!utils.RSAKeyHandler@{utils.RSAKeyHandler}}
+\doxysubsubsection{\texorpdfstring{export\_public\_key()}{export\_public\_key()}}
+{\footnotesize\ttfamily \label{classutils_1_1_r_s_a_key_handler_a876ac6d268bdabcfa89aeaeb2b5adfa1} 
+utils.\+RSAKey\+Handler.\+export\+\_\+public\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Eksportuje klucz publiczny w formacie PEM. 
+
+\begin{DoxyReturn}{Returns}
+Klucz publiczny jako bajty. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classutils_1_1_r_s_a_key_handler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1_r_s_a_key_handler_a92d7cadc1c4e142dcf3fff0a5dbbedc6}\index{utils.RSAKeyHandler@{utils.RSAKeyHandler}!key\_pair@{key\_pair}}
+\index{key\_pair@{key\_pair}!utils.RSAKeyHandler@{utils.RSAKeyHandler}}
+\doxysubsubsection{\texorpdfstring{key\_pair}{key\_pair}}
+{\footnotesize\ttfamily \label{classutils_1_1_r_s_a_key_handler_a92d7cadc1c4e142dcf3fff0a5dbbedc6} 
+utils.\+RSAKey\+Handler.\+key\+\_\+pair = rsa.\+generate\+\_\+private\+\_\+key(public\+\_\+exponent=65537, key\+\_\+size=4096)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,124 @@
+\doxysection{verifier.\+PDFSignature\+Checker Class Reference}
+\hypertarget{classverifier_1_1_p_d_f_signature_checker}{}\label{classverifier_1_1_p_d_f_signature_checker}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+
+
+Klasa odpowiadająca za weryfikację podpisów PDF.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_aa83f5826600ecd3d1d242406a27df8b5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, document\+\_\+path, rsa\+\_\+pub\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje weryfikator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_a710d7aee461073910cd0c3b34d956fb8}{split\+\_\+content\+\_\+and\+\_\+signature}} (self)
+\begin{DoxyCompactList}\small\item\em Oddziela treść pliku PDF od podpisu (ostatnie 512 bajtów). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_a3c68787a6c3f7a20099ea7c5636626de}{perform\+\_\+check}} (self)
+\begin{DoxyCompactList}\small\item\em Weryfikuje podpis przy pomocy klucza publicznego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_a6f696b197649320ab10e125e2375b63e}{pdf\+\_\+path}} = document\+\_\+path
+\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_adae36a21bcb838d7547e33a1bf9ab85f}{pub\+\_\+key}} = rsa\+\_\+pub\+\_\+key
+\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_a5b5e33778d59ef82f47669897e364d3a}{data}} = None
+\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_accd707b72ffcd82a8401d8843f4b6c11}{signature}} = None
+\item 
+\mbox{\hyperlink{classverifier_1_1_p_d_f_signature_checker_aa01d53804debf3cd0790e7f7ba52fa35}{content}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiadająca za weryfikację podpisów PDF. 
+
+\label{doc-constructors}
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_aa83f5826600ecd3d1d242406a27df8b5}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_aa83f5826600ecd3d1d242406a27df8b5} 
+verifier.\+PDFSignature\+Checker.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{document\+\_\+path}{, }\item[{}]{rsa\+\_\+pub\+\_\+key}{}\end{DoxyParamCaption})}
+
+
+
+Inicjalizuje weryfikator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em document\+\_\+path} & Ścieżka do podpisanego PDF. \\
+\hline
+{\em rsa\+\_\+pub\+\_\+key} & Klucz publiczny RSA do weryfikacji. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_a3c68787a6c3f7a20099ea7c5636626de}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!perform\_check@{perform\_check}}
+\index{perform\_check@{perform\_check}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{perform\_check()}{perform\_check()}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_a3c68787a6c3f7a20099ea7c5636626de} 
+verifier.\+PDFSignature\+Checker.\+perform\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Weryfikuje podpis przy pomocy klucza publicznego. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Signature} & gdy podpis się nie zgadza. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_a710d7aee461073910cd0c3b34d956fb8}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!split\_content\_and\_signature@{split\_content\_and\_signature}}
+\index{split\_content\_and\_signature@{split\_content\_and\_signature}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{split\_content\_and\_signature()}{split\_content\_and\_signature()}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_a710d7aee461073910cd0c3b34d956fb8} 
+verifier.\+PDFSignature\+Checker.\+split\+\_\+content\+\_\+and\+\_\+signature (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Oddziela treść pliku PDF od podpisu (ostatnie 512 bajtów). 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_aa01d53804debf3cd0790e7f7ba52fa35}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!content@{content}}
+\index{content@{content}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_aa01d53804debf3cd0790e7f7ba52fa35} 
+verifier.\+PDFSignature\+Checker.\+content = None}
+
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_a5b5e33778d59ef82f47669897e364d3a}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!data@{data}}
+\index{data@{data}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_a5b5e33778d59ef82f47669897e364d3a} 
+verifier.\+PDFSignature\+Checker.\+data = None}
+
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_a6f696b197649320ab10e125e2375b63e}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!pdf\_path@{pdf\_path}}
+\index{pdf\_path@{pdf\_path}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{pdf\_path}{pdf\_path}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_a6f696b197649320ab10e125e2375b63e} 
+verifier.\+PDFSignature\+Checker.\+pdf\+\_\+path = document\+\_\+path}
+
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_adae36a21bcb838d7547e33a1bf9ab85f}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!pub\_key@{pub\_key}}
+\index{pub\_key@{pub\_key}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{pub\_key}{pub\_key}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_adae36a21bcb838d7547e33a1bf9ab85f} 
+verifier.\+PDFSignature\+Checker.\+pub\+\_\+key = rsa\+\_\+pub\+\_\+key}
+
+\Hypertarget{classverifier_1_1_p_d_f_signature_checker_accd707b72ffcd82a8401d8843f4b6c11}\index{verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}!signature@{signature}}
+\index{signature@{signature}!verifier.PDFSignatureChecker@{verifier.PDFSignatureChecker}}
+\doxysubsubsection{\texorpdfstring{signature}{signature}}
+{\footnotesize\ttfamily \label{classverifier_1_1_p_d_f_signature_checker_accd707b72ffcd82a8401d8843f4b6c11} 
+verifier.\+PDFSignature\+Checker.\+signature = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{verifier_8py}{verifier.\+py}}\end{DoxyCompactItemize}

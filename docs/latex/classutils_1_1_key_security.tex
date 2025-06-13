@@ -1,0 +1,65 @@
+\doxysection{utils.\+Key\+Security Class Reference}
+\hypertarget{classutils_1_1_key_security}{}\label{classutils_1_1_key_security}\index{utils.KeySecurity@{utils.KeySecurity}}
+
+
+Obsługuje szyfrowanie klucza prywatnego przy pomocy PIN-\/u.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1_key_security_abe02acb9c0bc869ad7054faa8d88e21f}{derive\+\_\+key\+\_\+from\+\_\+pin}} (pin)
+\begin{DoxyCompactList}\small\item\em Wyprowadza klucz AES z podanego PIN-\/u. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classutils_1_1_key_security_a72a2a757cd1265d04d2b4cff65cf9a8e}{encrypt\+\_\+private\+\_\+data}} (private\+\_\+data, pin)
+\begin{DoxyCompactList}\small\item\em Szyfruje dane klucza prywatnego przy użyciu AES-\/\+CFB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Obsługuje szyfrowanie klucza prywatnego przy pomocy PIN-\/u. 
+
+\label{doc-func-members}
+\Hypertarget{classutils_1_1_key_security_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1_key_security_abe02acb9c0bc869ad7054faa8d88e21f}\index{utils.KeySecurity@{utils.KeySecurity}!derive\_key\_from\_pin@{derive\_key\_from\_pin}}
+\index{derive\_key\_from\_pin@{derive\_key\_from\_pin}!utils.KeySecurity@{utils.KeySecurity}}
+\doxysubsubsection{\texorpdfstring{derive\_key\_from\_pin()}{derive\_key\_from\_pin()}}
+{\footnotesize\ttfamily \label{classutils_1_1_key_security_abe02acb9c0bc869ad7054faa8d88e21f} 
+utils.\+Key\+Security.\+derive\+\_\+key\+\_\+from\+\_\+pin (\begin{DoxyParamCaption}\item[{}]{pin}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Wyprowadza klucz AES z podanego PIN-\/u. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & Kod PIN jako string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Klucz AES (32 bajty) 
+\end{DoxyReturn}
+\Hypertarget{classutils_1_1_key_security_a72a2a757cd1265d04d2b4cff65cf9a8e}\index{utils.KeySecurity@{utils.KeySecurity}!encrypt\_private\_data@{encrypt\_private\_data}}
+\index{encrypt\_private\_data@{encrypt\_private\_data}!utils.KeySecurity@{utils.KeySecurity}}
+\doxysubsubsection{\texorpdfstring{encrypt\_private\_data()}{encrypt\_private\_data()}}
+{\footnotesize\ttfamily \label{classutils_1_1_key_security_a72a2a757cd1265d04d2b4cff65cf9a8e} 
+utils.\+Key\+Security.\+encrypt\+\_\+private\+\_\+data (\begin{DoxyParamCaption}\item[{}]{private\+\_\+data}{, }\item[{}]{pin}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Szyfruje dane klucza prywatnego przy użyciu AES-\/\+CFB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em private\+\_\+data} & Dane do zaszyfrowania (klucz prywatny). \\
+\hline
+{\em pin} & Kod PIN jako string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+IV + zaszyfrowane dane. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

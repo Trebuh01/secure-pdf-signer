@@ -1,0 +1,159 @@
+\doxysection{key\+\_\+deployment.\+USBKey\+Handler Class Reference}
+\hypertarget{classkey__deployment_1_1_u_s_b_key_handler}{}\label{classkey__deployment_1_1_u_s_b_key_handler}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+
+
+Klasa zarządzająca procesem tworzenia kluczy RSA i zapisywania ich na urządzeniu USB.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_a9c0c19daf3554d60d6f2f939d25a920c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_a96bafc8cb07a4329e5bb1e3ff73c4389}{gui}})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_a916ebdd1c245a9f8c0aadc7cc54a0c44}{log}} (self, text)
+\begin{DoxyCompactList}\small\item\em Wyświetla komunikat w GUI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_ad7570d2d72d88ecaa5a07c649b910e50}{request\+\_\+pin}} (self)
+\begin{DoxyCompactList}\small\item\em Prosi użytkownika o wprowadzenie PIN-\/u. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_ac04444cee0fd3b20e81840e908bc2b7d}{save\+\_\+public\+\_\+key}} (self, public\+\_\+bytes)
+\begin{DoxyCompactList}\small\item\em Zapisuje klucz publiczny do wybranej przez użytkownika lokalizacji. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_a458ad97973cd0816b1a0556a9712b6b2}{deploy\+\_\+keys\+\_\+to\+\_\+usb}} (self, drive\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Generuje i zapisuje zaszyfrowany klucz prywatny oraz klucz publiczny na USB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_a0a2007221e3e53a4e94b8e210e8b7f7d}{monitor\+\_\+usb}} (self, known\+\_\+drives)
+\begin{DoxyCompactList}\small\item\em Monitoruje system w poszukiwaniu nowo podłączonych urządzeń USB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_a76fb0f30536bfcd3b77d8aaba81f6ad0}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Uruchamia monitorowanie USB w osobnym wątku i startuje GUI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkey__deployment_1_1_u_s_b_key_handler_a96bafc8cb07a4329e5bb1e3ff73c4389}{gui}} = gui
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa zarządzająca procesem tworzenia kluczy RSA i zapisywania ich na urządzeniu USB. 
+
+\label{doc-constructors}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_a9c0c19daf3554d60d6f2f939d25a920c}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_a9c0c19daf3554d60d6f2f939d25a920c} 
+key\+\_\+deployment.\+USBKey\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{gui}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui} & Interfejs GUI do obsługi logowania i wejścia od użytkownika. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_a458ad97973cd0816b1a0556a9712b6b2}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!deploy\_keys\_to\_usb@{deploy\_keys\_to\_usb}}
+\index{deploy\_keys\_to\_usb@{deploy\_keys\_to\_usb}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{deploy\_keys\_to\_usb()}{deploy\_keys\_to\_usb()}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_a458ad97973cd0816b1a0556a9712b6b2} 
+key\+\_\+deployment.\+USBKey\+Handler.\+deploy\+\_\+keys\+\_\+to\+\_\+usb (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{drive\+\_\+path}{}\end{DoxyParamCaption})}
+
+
+
+Generuje i zapisuje zaszyfrowany klucz prywatny oraz klucz publiczny na USB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive\+\_\+path} & Ścieżka do zamontowanego pendrive’a. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_a916ebdd1c245a9f8c0aadc7cc54a0c44}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!log@{log}}
+\index{log@{log}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_a916ebdd1c245a9f8c0aadc7cc54a0c44} 
+key\+\_\+deployment.\+USBKey\+Handler.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Wyświetla komunikat w GUI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Tekst do wyświetlenia. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_a0a2007221e3e53a4e94b8e210e8b7f7d}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!monitor\_usb@{monitor\_usb}}
+\index{monitor\_usb@{monitor\_usb}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{monitor\_usb()}{monitor\_usb()}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_a0a2007221e3e53a4e94b8e210e8b7f7d} 
+key\+\_\+deployment.\+USBKey\+Handler.\+monitor\+\_\+usb (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{known\+\_\+drives}{}\end{DoxyParamCaption})}
+
+
+
+Monitoruje system w poszukiwaniu nowo podłączonych urządzeń USB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em known\+\_\+drives} & Zestaw już znanych dysków USB. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_ad7570d2d72d88ecaa5a07c649b910e50}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!request\_pin@{request\_pin}}
+\index{request\_pin@{request\_pin}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{request\_pin()}{request\_pin()}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_ad7570d2d72d88ecaa5a07c649b910e50} 
+key\+\_\+deployment.\+USBKey\+Handler.\+request\+\_\+pin (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Prosi użytkownika o wprowadzenie PIN-\/u. 
+
+\begin{DoxyReturn}{Returns}
+PIN jako string lub None jeśli anulowano. 
+\end{DoxyReturn}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_a76fb0f30536bfcd3b77d8aaba81f6ad0}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!run@{run}}
+\index{run@{run}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_a76fb0f30536bfcd3b77d8aaba81f6ad0} 
+key\+\_\+deployment.\+USBKey\+Handler.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Uruchamia monitorowanie USB w osobnym wątku i startuje GUI. 
+
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_ac04444cee0fd3b20e81840e908bc2b7d}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!save\_public\_key@{save\_public\_key}}
+\index{save\_public\_key@{save\_public\_key}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{save\_public\_key()}{save\_public\_key()}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_ac04444cee0fd3b20e81840e908bc2b7d} 
+key\+\_\+deployment.\+USBKey\+Handler.\+save\+\_\+public\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{public\+\_\+bytes}{}\end{DoxyParamCaption})}
+
+
+
+Zapisuje klucz publiczny do wybranej przez użytkownika lokalizacji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em public\+\_\+bytes} & Bajty z kluczem publicznym. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ścieżka zapisu lub None jeśli anulowano. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classkey__deployment_1_1_u_s_b_key_handler_a96bafc8cb07a4329e5bb1e3ff73c4389}\index{key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}!gui@{gui}}
+\index{gui@{gui}!key\_deployment.USBKeyHandler@{key\_deployment.USBKeyHandler}}
+\doxysubsubsection{\texorpdfstring{gui}{gui}}
+{\footnotesize\ttfamily \label{classkey__deployment_1_1_u_s_b_key_handler_a96bafc8cb07a4329e5bb1e3ff73c4389} 
+key\+\_\+deployment.\+USBKey\+Handler.\+gui = gui}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{key__deployment_8py}{key\+\_\+deployment.\+py}}\end{DoxyCompactItemize}
