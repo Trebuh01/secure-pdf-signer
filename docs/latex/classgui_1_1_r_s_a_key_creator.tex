@@ -1,0 +1,127 @@
+\doxysection{gui.\+RSAKey\+Creator Class Reference}
+\hypertarget{classgui_1_1_r_s_a_key_creator}{}\label{classgui_1_1_r_s_a_key_creator}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+
+
+GUI do generowania i zapisu kluczy RSA.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_a53b3ecc998a68d342f39dcd971a0409d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_a5b8e152f650c933923a09799d32c7c85}{root}})
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizuje okno logu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_aa56959a95ff7bf6a90ad30c6f9e6b2e4}{log}} (self, text)
+\begin{DoxyCompactList}\small\item\em Wyświetla wiadomość w logu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_a1f115c4536fb4a730d2420459799c010}{get\+\_\+pin\+\_\+from\+\_\+user}} (self)
+\begin{DoxyCompactList}\small\item\em Pyta użytkownika o 4-\/cyfrowy PIN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_a6673400817cb3a6762ebe1b178f81c5e}{get\+\_\+file\+\_\+destination\+\_\+from\+\_\+user}} (self)
+\begin{DoxyCompactList}\small\item\em Pokazuje okno wyboru lokalizacji zapisu klucza publicznego. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_a276c83dea46ca754f62f001bc1349e16}{after}} (self, delay, callback)
+\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_aa13a6d73c61272bff5a42d813637fdb5}{mainloop}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_a5b8e152f650c933923a09799d32c7c85}{root}} = root
+\item 
+\mbox{\hyperlink{classgui_1_1_r_s_a_key_creator_a1bccf10b72ca5f5259e2a53b67d4059f}{console}} = tk.\+Text(self.\+root, wrap=tk.\+WORD)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GUI do generowania i zapisu kluczy RSA. 
+
+\label{doc-constructors}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_a53b3ecc998a68d342f39dcd971a0409d}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_a53b3ecc998a68d342f39dcd971a0409d} 
+gui.\+RSAKey\+Creator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{root}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor inicjalizuje okno logu. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_a276c83dea46ca754f62f001bc1349e16}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!after@{after}}
+\index{after@{after}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_a276c83dea46ca754f62f001bc1349e16} 
+gui.\+RSAKey\+Creator.\+after (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{delay}{, }\item[{}]{callback}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgui_1_1_r_s_a_key_creator_a6673400817cb3a6762ebe1b178f81c5e}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!get\_file\_destination\_from\_user@{get\_file\_destination\_from\_user}}
+\index{get\_file\_destination\_from\_user@{get\_file\_destination\_from\_user}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{get\_file\_destination\_from\_user()}{get\_file\_destination\_from\_user()}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_a6673400817cb3a6762ebe1b178f81c5e} 
+gui.\+RSAKey\+Creator.\+get\+\_\+file\+\_\+destination\+\_\+from\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Pokazuje okno wyboru lokalizacji zapisu klucza publicznego. 
+
+\begin{DoxyReturn}{Returns}
+Ścieżka zapisu lub None. 
+\end{DoxyReturn}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_a1f115c4536fb4a730d2420459799c010}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!get\_pin\_from\_user@{get\_pin\_from\_user}}
+\index{get\_pin\_from\_user@{get\_pin\_from\_user}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{get\_pin\_from\_user()}{get\_pin\_from\_user()}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_a1f115c4536fb4a730d2420459799c010} 
+gui.\+RSAKey\+Creator.\+get\+\_\+pin\+\_\+from\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Pyta użytkownika o 4-\/cyfrowy PIN. 
+
+\begin{DoxyReturn}{Returns}
+PIN jako string lub None. 
+\end{DoxyReturn}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_aa56959a95ff7bf6a90ad30c6f9e6b2e4}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!log@{log}}
+\index{log@{log}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_aa56959a95ff7bf6a90ad30c6f9e6b2e4} 
+gui.\+RSAKey\+Creator.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Wyświetla wiadomość w logu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Tekst do wyświetlenia. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_aa13a6d73c61272bff5a42d813637fdb5}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!mainloop@{mainloop}}
+\index{mainloop@{mainloop}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{mainloop()}{mainloop()}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_aa13a6d73c61272bff5a42d813637fdb5} 
+gui.\+RSAKey\+Creator.\+mainloop (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgui_1_1_r_s_a_key_creator_a1bccf10b72ca5f5259e2a53b67d4059f}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!console@{console}}
+\index{console@{console}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{console}{console}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_a1bccf10b72ca5f5259e2a53b67d4059f} 
+gui.\+RSAKey\+Creator.\+console = tk.\+Text(self.\+root, wrap=tk.\+WORD)}
+
+\Hypertarget{classgui_1_1_r_s_a_key_creator_a5b8e152f650c933923a09799d32c7c85}\index{gui.RSAKeyCreator@{gui.RSAKeyCreator}!root@{root}}
+\index{root@{root}!gui.RSAKeyCreator@{gui.RSAKeyCreator}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \label{classgui_1_1_r_s_a_key_creator_a5b8e152f650c933923a09799d32c7c85} 
+gui.\+RSAKey\+Creator.\+root = root}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{gui_8py}{gui.\+py}}\end{DoxyCompactItemize}

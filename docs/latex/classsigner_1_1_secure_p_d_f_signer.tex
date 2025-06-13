@@ -1,0 +1,119 @@
+\doxysection{signer.\+Secure\+PDFSigner Class Reference}
+\hypertarget{classsigner_1_1_secure_p_d_f_signer}{}\label{classsigner_1_1_secure_p_d_f_signer}\index{signer.SecurePDFSigner@{signer.SecurePDFSigner}}
+
+
+Klasa odpowiedzialna za proces podpisywania PDF przy użyciu zaszyfrowanego klucza RSA z nośnika USB.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsigner_1_1_secure_p_d_f_signer_ad0a5387beed8252e2b1c77fb7051542b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsigner_1_1_secure_p_d_f_signer_ac76cd0d8c9b2da89392d9618fa9d2c95}{gui}})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsigner_1_1_secure_p_d_f_signer_ae2415c8c627a11aed261bd9837048045}{log\+\_\+msg}} (self, text)
+\begin{DoxyCompactList}\small\item\em Wypisuje komunikat do GUI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsigner_1_1_secure_p_d_f_signer_a1209f43afefcf36c0650ee5c1a327f43}{device\+\_\+listener}} (self)
+\begin{DoxyCompactList}\small\item\em Nasłuchuje podłączenia urządzenia z zaszyfrowanym kluczem prywatnym. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsigner_1_1_secure_p_d_f_signer_a218001ed56a0a6d6b8b9889e5705f485}{initiate\+\_\+signature}} (self, key\+\_\+location)
+\begin{DoxyCompactList}\small\item\em Odszyfrowuje klucz i uruchamia dialog podpisywania pliku. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsigner_1_1_secure_p_d_f_signer_af50b4fd66c683713a9d3f093fe8a2db6}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Uruchamia wątek nasłuchujący i główną pętlę GUI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsigner_1_1_secure_p_d_f_signer_ac76cd0d8c9b2da89392d9618fa9d2c95}{gui}} = gui
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za proces podpisywania PDF przy użyciu zaszyfrowanego klucza RSA z nośnika USB. 
+
+\label{doc-constructors}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_ad0a5387beed8252e2b1c77fb7051542b}\index{signer.SecurePDFSigner@{signer.SecurePDFSigner}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!signer.SecurePDFSigner@{signer.SecurePDFSigner}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsigner_1_1_secure_p_d_f_signer_ad0a5387beed8252e2b1c77fb7051542b} 
+signer.\+Secure\+PDFSigner.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{gui}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui} & Obiekt GUI umożliwiający interakcję z użytkownikiem. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_a1209f43afefcf36c0650ee5c1a327f43}\index{signer.SecurePDFSigner@{signer.SecurePDFSigner}!device\_listener@{device\_listener}}
+\index{device\_listener@{device\_listener}!signer.SecurePDFSigner@{signer.SecurePDFSigner}}
+\doxysubsubsection{\texorpdfstring{device\_listener()}{device\_listener()}}
+{\footnotesize\ttfamily \label{classsigner_1_1_secure_p_d_f_signer_a1209f43afefcf36c0650ee5c1a327f43} 
+signer.\+Secure\+PDFSigner.\+device\+\_\+listener (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Nasłuchuje podłączenia urządzenia z zaszyfrowanym kluczem prywatnym. 
+
+Po wykryciu odpowiedniego pliku, rozpoczyna proces podpisywania. \Hypertarget{classsigner_1_1_secure_p_d_f_signer_a218001ed56a0a6d6b8b9889e5705f485}\index{signer.SecurePDFSigner@{signer.SecurePDFSigner}!initiate\_signature@{initiate\_signature}}
+\index{initiate\_signature@{initiate\_signature}!signer.SecurePDFSigner@{signer.SecurePDFSigner}}
+\doxysubsubsection{\texorpdfstring{initiate\_signature()}{initiate\_signature()}}
+{\footnotesize\ttfamily \label{classsigner_1_1_secure_p_d_f_signer_a218001ed56a0a6d6b8b9889e5705f485} 
+signer.\+Secure\+PDFSigner.\+initiate\+\_\+signature (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key\+\_\+location}{}\end{DoxyParamCaption})}
+
+
+
+Odszyfrowuje klucz i uruchamia dialog podpisywania pliku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+location} & Ścieżka do zaszyfrowanego klucza prywatnego na pendrive. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_ae2415c8c627a11aed261bd9837048045}\index{signer.SecurePDFSigner@{signer.SecurePDFSigner}!log\_msg@{log\_msg}}
+\index{log\_msg@{log\_msg}!signer.SecurePDFSigner@{signer.SecurePDFSigner}}
+\doxysubsubsection{\texorpdfstring{log\_msg()}{log\_msg()}}
+{\footnotesize\ttfamily \label{classsigner_1_1_secure_p_d_f_signer_ae2415c8c627a11aed261bd9837048045} 
+signer.\+Secure\+PDFSigner.\+log\+\_\+msg (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Wypisuje komunikat do GUI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Tekst do wyświetlenia. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_af50b4fd66c683713a9d3f093fe8a2db6}\index{signer.SecurePDFSigner@{signer.SecurePDFSigner}!run@{run}}
+\index{run@{run}!signer.SecurePDFSigner@{signer.SecurePDFSigner}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classsigner_1_1_secure_p_d_f_signer_af50b4fd66c683713a9d3f093fe8a2db6} 
+signer.\+Secure\+PDFSigner.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Uruchamia wątek nasłuchujący i główną pętlę GUI. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsigner_1_1_secure_p_d_f_signer_ac76cd0d8c9b2da89392d9618fa9d2c95}\index{signer.SecurePDFSigner@{signer.SecurePDFSigner}!gui@{gui}}
+\index{gui@{gui}!signer.SecurePDFSigner@{signer.SecurePDFSigner}}
+\doxysubsubsection{\texorpdfstring{gui}{gui}}
+{\footnotesize\ttfamily \label{classsigner_1_1_secure_p_d_f_signer_ac76cd0d8c9b2da89392d9618fa9d2c95} 
+signer.\+Secure\+PDFSigner.\+gui = gui}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{signer_8py}{signer.\+py}}\end{DoxyCompactItemize}

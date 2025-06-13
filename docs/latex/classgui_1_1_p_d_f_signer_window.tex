@@ -1,0 +1,116 @@
+\doxysection{gui.\+PDFSigner\+Window Class Reference}
+\hypertarget{classgui_1_1_p_d_f_signer_window}{}\label{classgui_1_1_p_d_f_signer_window}\index{gui.PDFSignerWindow@{gui.PDFSignerWindow}}
+
+
+Okno GUI do podpisywania plików PDF przy użyciu klucza prywatnego.  
+
+
+Inheritance diagram for gui.\+PDFSigner\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1_p_d_f_signer_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_p_d_f_signer_window_a756c1f430f04d6543cb2cb137246c503}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classgui_1_1_p_d_f_signer_window_a340d4a9f19db614454bcc0570e689bb9}{log\+\_\+msg}} (self, text)
+\begin{DoxyCompactList}\small\item\em Dodaje wiadomość do logu GUI i konsoli. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_p_d_f_signer_window_a8bd59f862966bddafab90320dcbebb8d}{sign\+\_\+file\+\_\+dialog}} (self, decrypted\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Wywołuje proces wyboru pliku i jego podpisania. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_p_d_f_signer_window_a824174226fb4fa4b199ad3922049e04b}{select\+\_\+and\+\_\+sign}} (self, signer\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Wybiera plik PDF, podpisuje go i zapisuje podpisaną wersję. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_p_d_f_signer_window_a7a6492a90a4f6a02f0a5e06d09eb3871}{get\+\_\+pin\+\_\+from\+\_\+user}} (self)
+\begin{DoxyCompactList}\small\item\em Pyta użytkownika o PIN do odszyfrowania klucza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_p_d_f_signer_window_a2dc0764c7739945836888bf769f7584f}{display}} = scrolledtext.\+Scrolled\+Text(self, wrap=tk.\+WORD)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Okno GUI do podpisywania plików PDF przy użyciu klucza prywatnego. 
+
+\label{doc-constructors}
+\Hypertarget{classgui_1_1_p_d_f_signer_window_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgui_1_1_p_d_f_signer_window_a756c1f430f04d6543cb2cb137246c503}\index{gui.PDFSignerWindow@{gui.PDFSignerWindow}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gui.PDFSignerWindow@{gui.PDFSignerWindow}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classgui_1_1_p_d_f_signer_window_a756c1f430f04d6543cb2cb137246c503} 
+gui.\+PDFSigner\+Window.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classgui_1_1_p_d_f_signer_window_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgui_1_1_p_d_f_signer_window_a7a6492a90a4f6a02f0a5e06d09eb3871}\index{gui.PDFSignerWindow@{gui.PDFSignerWindow}!get\_pin\_from\_user@{get\_pin\_from\_user}}
+\index{get\_pin\_from\_user@{get\_pin\_from\_user}!gui.PDFSignerWindow@{gui.PDFSignerWindow}}
+\doxysubsubsection{\texorpdfstring{get\_pin\_from\_user()}{get\_pin\_from\_user()}}
+{\footnotesize\ttfamily \label{classgui_1_1_p_d_f_signer_window_a7a6492a90a4f6a02f0a5e06d09eb3871} 
+gui.\+PDFSigner\+Window.\+get\+\_\+pin\+\_\+from\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Pyta użytkownika o PIN do odszyfrowania klucza. 
+
+\Hypertarget{classgui_1_1_p_d_f_signer_window_a340d4a9f19db614454bcc0570e689bb9}\index{gui.PDFSignerWindow@{gui.PDFSignerWindow}!log\_msg@{log\_msg}}
+\index{log\_msg@{log\_msg}!gui.PDFSignerWindow@{gui.PDFSignerWindow}}
+\doxysubsubsection{\texorpdfstring{log\_msg()}{log\_msg()}}
+{\footnotesize\ttfamily \label{classgui_1_1_p_d_f_signer_window_a340d4a9f19db614454bcc0570e689bb9} 
+gui.\+PDFSigner\+Window.\+log\+\_\+msg (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje wiadomość do logu GUI i konsoli. 
+
+\Hypertarget{classgui_1_1_p_d_f_signer_window_a824174226fb4fa4b199ad3922049e04b}\index{gui.PDFSignerWindow@{gui.PDFSignerWindow}!select\_and\_sign@{select\_and\_sign}}
+\index{select\_and\_sign@{select\_and\_sign}!gui.PDFSignerWindow@{gui.PDFSignerWindow}}
+\doxysubsubsection{\texorpdfstring{select\_and\_sign()}{select\_and\_sign()}}
+{\footnotesize\ttfamily \label{classgui_1_1_p_d_f_signer_window_a824174226fb4fa4b199ad3922049e04b} 
+gui.\+PDFSigner\+Window.\+select\+\_\+and\+\_\+sign (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{signer\+\_\+key}{}\end{DoxyParamCaption})}
+
+
+
+Wybiera plik PDF, podpisuje go i zapisuje podpisaną wersję. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signer\+\_\+key} & Klucz prywatny do podpisu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgui_1_1_p_d_f_signer_window_a8bd59f862966bddafab90320dcbebb8d}\index{gui.PDFSignerWindow@{gui.PDFSignerWindow}!sign\_file\_dialog@{sign\_file\_dialog}}
+\index{sign\_file\_dialog@{sign\_file\_dialog}!gui.PDFSignerWindow@{gui.PDFSignerWindow}}
+\doxysubsubsection{\texorpdfstring{sign\_file\_dialog()}{sign\_file\_dialog()}}
+{\footnotesize\ttfamily \label{classgui_1_1_p_d_f_signer_window_a8bd59f862966bddafab90320dcbebb8d} 
+gui.\+PDFSigner\+Window.\+sign\+\_\+file\+\_\+dialog (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{decrypted\+\_\+key}{}\end{DoxyParamCaption})}
+
+
+
+Wywołuje proces wyboru pliku i jego podpisania. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decrypted\+\_\+key} & Odszyfrowany klucz prywatny RSA. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{classgui_1_1_p_d_f_signer_window_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgui_1_1_p_d_f_signer_window_a2dc0764c7739945836888bf769f7584f}\index{gui.PDFSignerWindow@{gui.PDFSignerWindow}!display@{display}}
+\index{display@{display}!gui.PDFSignerWindow@{gui.PDFSignerWindow}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \label{classgui_1_1_p_d_f_signer_window_a2dc0764c7739945836888bf769f7584f} 
+gui.\+PDFSigner\+Window.\+display = scrolledtext.\+Scrolled\+Text(self, wrap=tk.\+WORD)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{gui_8py}{gui.\+py}}\end{DoxyCompactItemize}
